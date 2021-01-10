@@ -8,4 +8,14 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_09 {
+    public static void main(String[] args) {
+        for(String arg: args) {
+            if("STAHP".equals(arg)){
+                System.out.println("BROKEN");
+                break;
+            }
+            continue;
+        }
+        System.out.println("END PROGRAM");
+    }
 }

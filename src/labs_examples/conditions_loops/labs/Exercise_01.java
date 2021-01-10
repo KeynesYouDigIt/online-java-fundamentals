@@ -22,8 +22,17 @@ public class Exercise_01 {
         System.out.print("Enter a number between 1 and 1,000,000,000 to determine whether it is odd or even: ");
         // assign input to variable as int
         int number = scanner.nextInt();
-
         // write completed code here
-
+        boolean invalid = number > 1000000000 || number < 1;
+        if (invalid) {
+            System.out.println("That number is not within range....");
+            main(args);
+        }
+        if(number % 2 == 0) {
+            System.out.println("Even number!");
+            main(args);
+        }
+        System.out.println("Odd number");
+        main(args);
     }
 }

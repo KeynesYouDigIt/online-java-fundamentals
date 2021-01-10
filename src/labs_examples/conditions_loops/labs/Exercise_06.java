@@ -1,5 +1,4 @@
 package labs_examples.conditions_loops.labs;
-
 /**
  * Conditions and Loops Exercise 6: Basic while loop
  *
@@ -8,4 +7,11 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_06 {
+    public static void main(String[] args) {
+        int start = 0;
+        while(start<100) {
+            start++;
+        }
+        System.out.println(start);
+    }
 }
